@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <com.arkaccountslite.widget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="@string/select_language"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_normal"
+        app:font="@string/font_regular" />
+
+    <io.blackbox_vision.wheelview.view.WheelView
+        android:id="@+id/loop_view"
+        style="@style/PickerText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="40dp"
+        app:canLoop="true"
+        app:centerTextColor="@android:color/black"
+        app:drawItemCount="7"
+        app:initPosition="1"
+        app:lineColor="@color/divider_color"
+        app:textSize="20sp"
+        app:topBottomTextColor="#ffafafaf" />
+
+    <com.arkaccountslite.widget.CustomButton
+        android:id="@+id/btn_continue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_round_corner"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/Continue"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        app:button_font="@string/font_bold" />
+
+
+</LinearLayout>

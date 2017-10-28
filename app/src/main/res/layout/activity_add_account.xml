@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_plus" />
+
+        <com.arkaccountslite.widget.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_group"
+            android:hint="@string/Name"
+            android:padding="5dp"
+            android:textColorHint="@color/light_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Mobile"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_bold" />
+
+        <com.arkaccountslite.widget.CustomEditText
+            android:id="@+id/edit_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_grey_fill"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="8dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_regular" />
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/Balance"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_bold" />
+
+        <com.arkaccountslite.widget.CustomEditText
+            android:id="@+id/edit_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_grey_fill"
+            android:hint="Add Balance"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_regular" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_credit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Credit"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_debit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Debit"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

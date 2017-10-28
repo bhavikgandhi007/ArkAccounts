@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_edge_less_padding_blue"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:id="@+id/txt_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Account name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_bold" />
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:id="@+id/txt_account_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="7.00"
+            android:textColor="@color/green"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_bold" />
+    </RelativeLayout>
+
+    <com.arkaccountslite.widget.CustomTextView
+        android:id="@+id/txt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:text="Phone number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_normal"
+        app:font="@string/font_bold" />
+
+</LinearLayout>

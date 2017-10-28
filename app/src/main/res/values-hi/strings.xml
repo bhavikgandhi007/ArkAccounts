@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: Localizable.strings conversion
+ Release: Working copy
+ Locale: en, English
+ Exported by: Unregistered user
+ Exported at: Sun, 22 Oct 2017 15:38:21 +0100
+-->
+<resources>
+    <!-- Localizable.strings
+        ArkBook
+        Created by Prerna Gupta on 4/30/17.
+        Copyright © 2017 ArkInc. All rights reserved. -->
+    <string name="KEY">ચાવી</string>
+    <string name="you_like">શું તમને ગમે છે?</string>
+    <string name="yesterday_you_sold_apps">ગઈકાલે તમે %s apps વેચ્યાં</string>
+    <string name="make_every_moment_count">हर क्षण को महत्वपूर्ण बनाना।</string>
+    <string name="select_language">भाषा चुनिए</string>
+    <string name="Continue">आगे बढ़ें</string>
+    <string name="Next">आगे बढ़ें</string>
+    <string name="sign_up">खाता बनाएं</string>
+    <string name="contact_number">फ़ोन नंबर</string>
+    <string name="Password">पासवर्ड</string>
+    <string name="confirm_password">पुन: पासवर्ड</string>
+    <string name="OR">या</string>
+    <string name="already_have_account">पहले से ही खाता है?</string>
+    <string name="Settings">सेटिंग्स</string>
+    <string name="Logout">बाहर जाओ</string>
+    <string name="change_language">भाषा बदलो</string>
+    <string name="receive_push_notifications">पुश सूचनाएं प्राप्त करें</string>
+    <string name="All">सब</string>
+    <string name="Accounts">खाते</string>
+    <string name="Credit">जमा</string>
+    <string name="Debit">उधार</string>
+    <string name="Home">होम</string>
+    <string name="add_transaction">लेनदेन जोड़ें</string>
+    <string name="Name">नाम</string>
+    <string name="due_date">नियत तारीख</string>
+    <string name="due_days">नियत दिन</string>
+    <string name="add_balance">पैसे जोड़ें</string>
+    <string name="Balance">पैसे</string>
+    <string name="add_notes">नोट्स जोड़ें</string>
+    <string name="Notes">नोट्स</string>
+    <string name="add_account">खाता जोड़ें</string>
+    <string name="Mobile">मोबाइल</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="edit_account">खाता संपादित करें</string>
+    <string name="Save">संचय करें</string>
+    <string name="allow_reminders">अनुस्मारक की अनुमति दें</string>
+    <string name="due_days_2823fd097da728f89705f7d28aacdac4">देय दिन</string>
+    <string name="Date">तारीख</string>
+    <string name="receive_credit_payment_of">%1$s: %2$s जमा धन प्राप्त करें</string>
+    <string name="make_debit_payment_of">%1$s: %2$s उधार धन अदा करें</string>
+    <string name="Receivable">प्राप्य</string>
+    <string name="Payable">देय</string>
+    <string name="you_can_keep_maximum_365_days_as_due_days">आप अधिकतम 365 दिन नियत दिनों के रूप में रख सकते हैं</string>
+    <string name="Dismiss">खारिज</string>
+    <string name="Summary">सारांश</string>
+</resources>

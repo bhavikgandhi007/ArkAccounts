@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iosched="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_actionbar"
+    style="@style/HeaderBar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_gravity="center_horizontal"
+    iosched:popupTheme="@style/ActionBarPopupThemeOverlay"
+    iosched:theme="@style/ActionBarThemeOverlay"
+    iosched:titleTextAppearance="@style/ActionBar.TitleText">
+
+    <com.arkaccountslite.widget.CustomTextView
+        android:id="@+id/txt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_medium_large"
+        app:font="@string/font_regular"
+        android:layout_marginLeft="22dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text=""/>
+</android.support.v7.widget.Toolbar>

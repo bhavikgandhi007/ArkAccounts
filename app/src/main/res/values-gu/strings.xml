@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: Localizable.strings conversion
+ Release: Working copy
+ Locale: en, English
+ Exported by: Unregistered user
+ Exported at: Sun, 22 Oct 2017 15:37:16 +0100
+-->
+<resources>
+    <!-- Localizable.strings
+        ArkBook
+        Created by Prerna Gupta on 4/30/17.
+        Copyright © 2017 ArkInc. All rights reserved. -->
+    <string name="KEY">ચાવી</string>
+    <string name="you_like">શું તમને ગમે છે?</string>
+    <string name="yesterday_you_sold_apps">ગઈકાલે તમે %s apps વેચ્યાં</string>
+    <string name="make_every_moment_count">દરેક ક્ષણ ગણતરી કરો</string>
+    <string name="select_language">ભાષા પસંદ કરો</string>
+    <string name="Continue">આગળ વધો</string>
+    <string name="Next">આગળ વધો</string>
+    <string name="sign_up">ખાતું બનાવો</string>
+    <string name="contact_number">ફોન નંબર</string>
+    <string name="Password">પાસવર્ડ</string>
+    <string name="confirm_password">પાસવર્ડ ફરીથી નાખો</string>
+    <string name="OR">અથવા</string>
+    <string name="already_have_account">પહેલેથી ખાતું છે?</string>
+    <string name="Settings">સેટિંગ્સ</string>
+    <string name="Logout">બહાર જાઓ</string>
+    <string name="change_language">ભાષા બદલો</string>
+    <string name="receive_push_notifications">પુશ સૂચનાઓ પ્રાપ્ત કરો</string>
+    <string name="All">બધા</string>
+    <string name="Accounts">ખાતા</string>
+    <string name="Credit">જમા</string>
+    <string name="Debit">ઉધાર</string>
+    <string name="Home">હોમ</string>
+    <string name="add_transaction">લેવડ-દેવડ ઉમેરો</string>
+    <string name="Name">નામ</string>
+    <string name="due_date">નિયત તારીખ</string>
+    <string name="due_days">નિયત દિવસો</string>
+    <string name="add_balance">નાણાં ઉમેરો</string>
+    <string name="Balance">નાણાં</string>
+    <string name="add_notes">નોંધ ઉમેરો</string>
+    <string name="Notes">નોંધ</string>
+    <string name="add_account">ખાતું ઉમેરો</string>
+    <string name="Mobile">મોબાઇલ</string>
+    <string name="mobile_number">મોબાઇલ નંબર</string>
+    <string name="edit_account">ખાતું સંપાદિત કરો</string>
+    <string name="Save">સાચવો</string>
+    <string name="allow_reminders">રિમાઇન્ડરને મંજૂરી આપો</string>
+    <string name="due_days_3cacfe27f594612164307d5eedf960a7">ચૂકવવાપાત્ર દિવસો</string>
+    <string name="Date">તારીખ</string>
+    <string name="receive_credit_payment_of">%1$s: %2$s જમા નાણાં પ્રાપ્ત કરો</string>
+    <string name="make_debit_payment_of">%1$s: %2$s ઉધાર નાણાં આપો</string>
+    <string name="Receivable">મળવાપાત્ર</string>
+    <string name="Payable">ચૂકવવાપાત્ર</string>
+    <string name="you_can_keep_maximum_365_days_as_due_days">તમે નિયત દિવસો મહત્તમ 365 દિવસ રાખી શકો છો</string>
+    <string name="Dismiss">કાઢી નાંખો</string>
+    <string name="Summary">સારાંશ</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_tab_home"
+        android:title="@string/Home" />
+
+    <item
+        android:id="@+id/tab_credit"
+        android:icon="@drawable/ic_tab_credit"
+        app:showAsAction="ifRoom"
+        android:title="@string/Credit" />
+
+    <item
+        android:id="@+id/tab_account"
+        android:icon="@drawable/ic_tab_accounting"
+        android:title="@string/Accounts" />
+    <item
+        android:id="@+id/tab_debit"
+        android:icon="@drawable/ic_tab_debit"
+        android:title="@string/Debit" />
+    <item
+        android:id="@+id/tab_setting"
+        android:icon="@drawable/ic_tab_setting"
+        android:title="@string/Settings" />
+</menu>

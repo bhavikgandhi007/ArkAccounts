@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">" Ark Accounts"</string>
+
+
+    <string name="KEY">CONTENT</string>
+    <string name="you_like">You like?</string>
+    <string name="yesterday_you_sold_apps">Yesterday you sold %s apps</string>
+    <string name="make_every_moment_count">Make every moment count</string>
+    <string name="select_language">Select Language</string>
+    <string name="Continue">Continue</string>
+    <string name="Next">Next</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="Password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="OR">OR</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="Settings">Settings</string>
+    <string name="Logout">Logout</string>
+    <string name="change_language">Change Language</string>
+    <string name="receive_push_notifications">Receive Push notifications</string>
+    <string name="All">All</string>
+    <string name="Accounts">Accounts</string>
+    <string name="Credit">Credit</string>
+    <string name="Debit">Debit</string>
+    <string name="Home">Home</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="Name">Name</string>
+    <string name="due_date">Due Date</string>
+    <string name="due_days">Due Days</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="Balance">Balance</string>
+    <string name="add_notes">Add notes</string>
+    <string name="Notes">Notes</string>
+    <string name="add_account">Add Account</string>
+    <string name="Mobile">Mobile</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="Save">Save</string>
+    <string name="allow_reminders">Allow Reminders</string>
+    <string name="due_days_6520ed80bcb6ad9dd91aeb3f04bad093">Due days</string>
+    <string name="Date">Date</string>
+    <string name="receive_credit_payment_of">%1$s: Receive credit payment of %2$s</string>
+    <string name="make_debit_payment_of">%1$s: Make debit payment of %2$s</string>
+    <string name="Receivable">Receivable</string>
+    <string name="Payable">Payable</string>
+    <string name="you_can_keep_maximum_365_days_as_due_days">You can keep maximum 365 days as due days</string>
+    <string name="Dismiss">Dismiss</string>
+    <string name="Summary">Summary</string>
+
+    <string name="font_bold">Lato-Bold.ttf</string>
+    <string name="font_regular">Lato-Regular.ttf</string>
+    <string name="font_thin">Lato-Thin.ttf</string>
+
+
+    <string name="all_rights">Copyright @Arc Inc 2017.All Rights Reserved </string>
+    <string name="signup_title">Sign up with Ark Accounts</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujarati">ગુજરાતી</string>
+</resources>

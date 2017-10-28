@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_credit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Credit"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_debit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Debit"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/All"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        android:clipToPadding="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/empty_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="No account available"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_regular" />
+    </LinearLayout>
+
+
+</LinearLayout>
