@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.arkaccountslite.R;
 import com.arkaccountslite.ui.home.HomeActivity;
+import com.arkaccountslite.widget.LocaleHelper;
 
 import java.util.ArrayList;
 
@@ -43,7 +44,15 @@ public class LanguageActivity extends AppCompatActivity {
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(wheelView.getSelectedItem() == 0){
+                    LocaleHelper.setLocale(mContext,"en");
+                } else if(wheelView.getSelectedItem() == 1){
+                    LocaleHelper.setLocale(mContext,"hi");
+                } else if(wheelView.getSelectedItem() == 2){
+                    LocaleHelper.setLocale(mContext,"gu");
+                }
                 startActivity(new Intent(mContext, HomeActivity.class));
+                finish();
             }
         });
     }

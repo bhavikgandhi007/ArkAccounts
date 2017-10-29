@@ -112,6 +112,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="@string/Credit"
+                android:textColor="@drawable/radio_text_selector"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -124,6 +125,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="@string/Debit"
+                android:textColor="@drawable/radio_text_selector"
                 android:textSize="16sp" />
 
         </RadioGroup>

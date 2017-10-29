@@ -82,12 +82,14 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.arkaccountslite.widget.CustomTextView
+                <com.arkaccountslite.widget.CustomEditText
+                    android:id="@+id/edit_duedays"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:text="30"
+                    android:background="@null"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/font_size_normal"
                     app:font="@string/font_bold" />
@@ -106,6 +108,7 @@
             android:background="@color/divider_color" />
 
         <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_push_notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
@@ -119,6 +122,7 @@
             android:background="@color/divider_color" />
 
         <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_reminder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
@@ -132,6 +136,7 @@
             android:background="@color/divider_color" />
 
         <com.arkaccountslite.widget.CustomTextView
+            android:id="@+id/txt_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"

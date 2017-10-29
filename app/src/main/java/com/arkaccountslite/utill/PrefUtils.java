@@ -13,6 +13,9 @@ public class PrefUtils {
     public static final String PREF_DEVICE_TOKEN = "pref_device_token";
     public static final String PREF_IS_LOGGED_IN = "pref_is_logged_in";
     public static final String PREF_CART_COUNT_LOGGED_IN = "pref_cart_count_logged_In";
+    public static final String PREF_DEFAULT_DUE_DAYS = "pref_default_due_days";
+    public static final String PREF_IS_ALLOW_REMINDER = "pref_is_allow_reminder";
+    public static final String PREF_IS_ALLOW_NOTIFICATION = "pref_is_allow_notification";
 
     private static final String TAG = PrefUtils.class.getSimpleName();
 
@@ -65,5 +68,35 @@ public class PrefUtils {
     public static void setCartCountLoggedIn(Context context, int cartCount) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         sp.edit().putInt(PREF_CART_COUNT_LOGGED_IN, cartCount).commit();
+    }
+
+    public static int getPrefDefaultDueDays(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getInt(PREF_DEFAULT_DUE_DAYS,30);
+    }
+
+    public static void setPrefDefaultDueDays(Context context, int duedays) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putInt(PREF_DEFAULT_DUE_DAYS, duedays).commit();
+    }
+
+    public static boolean isAllowReminder(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getBoolean(PREF_IS_ALLOW_REMINDER, true);
+    }
+
+    public static void setPrefIsAllowReminder(Context context, boolean isAllow) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putBoolean(PREF_IS_ALLOW_REMINDER, isAllow).commit();
+    }
+
+    public static boolean isAllowPush(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getBoolean(PREF_IS_ALLOW_NOTIFICATION, true);
+    }
+
+    public static void setPrefIsAllowPush(Context context, boolean isAllow) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putBoolean(PREF_IS_ALLOW_NOTIFICATION, isAllow).commit();
     }
 }

@@ -45,6 +45,7 @@ public class HomeActivity extends AppCompatActivity {
         bottomBar.enableShiftingMode(false);
         bottomBar.enableItemShiftingMode(false);
 
+        menuSelected(0);
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -53,28 +54,33 @@ public class HomeActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.tab_home:
                         setupToolbar(0);
+                        menuSelected(0);
                         fragment = new FragmentSummary();
                         break;
                     case R.id.tab_credit:
                         setupToolbar(1);
+                        menuSelected(1);
                         fragment = new FragmentCreditDebit();
                         break;
                     case R.id.tab_account:
                         setupToolbar(2);
+                        menuSelected(2);
                         fragment = new FragmentAccount();
                         break;
                     case R.id.tab_debit:
                         setupToolbar(3);
+                        menuSelected(3);
                         fragment = new FragmentCreditDebit();
                         break;
                     case R.id.tab_setting:
                         setupToolbar(4);
+                        menuSelected(4);
                         fragment = new FragmentSetting();
                         break;
                 }
                 if (fragment != null) {
-                    ft.replace(R.id.container, fragment);
                     ft.addToBackStack(null);
+                    ft.replace(R.id.container, fragment);
                     ft.commit();
                 }
                 return false;
@@ -115,6 +121,18 @@ public class HomeActivity extends AppCompatActivity {
 
         }
 
+    }
+
+    private void menuSelected(int position) {
+        for (int i=0;i<bottomBar.getItemCount();i++){
+            if(i == position){
+                bottomBar.setIconTintList(i,getResources().getColorStateList(R.color.colorPrimary));
+                bottomBar.setTextTintList(i,getResources().getColorStateList(R.color.colorPrimary));
+            } else{
+                bottomBar.setIconTintList(i,getResources().getColorStateList(R.color.white));
+                bottomBar.setTextTintList(i,getResources().getColorStateList(R.color.white));
+            }
+        }
     }
 
 }

@@ -15,4 +15,5 @@
     <color name="purchase_dark_gray">#3a3a3a</color>
 
     <color name="divider_color">#CECECE</color>
+    <color name="white">#FFFFFF</color>
 </resources>
