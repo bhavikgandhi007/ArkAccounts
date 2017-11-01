@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.arkaccountslite.MainActivity;
 import com.arkaccountslite.R;
 
 public class SplashActivity extends AppCompatActivity {

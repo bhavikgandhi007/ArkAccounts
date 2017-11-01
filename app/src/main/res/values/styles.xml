@@ -43,4 +43,12 @@
     <style name="SplashActivityStyle" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
     </style>
+
+
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowMinWidthMajor">99%</item>
+        <item name="android:windowMinWidthMinor">99%</item>
+    </style>
+
 </resources>

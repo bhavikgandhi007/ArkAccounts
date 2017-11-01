@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
@@ -36,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        int currentItem = getIntent().getIntExtra("currentItem",0);
         container = (FrameLayout) findViewById(R.id.container);
         bottomBar = (BottomNavigationViewEx) findViewById(R.id.bnve);
         bottomBar.setIconSize(24, 24);
@@ -45,7 +47,15 @@ public class HomeActivity extends AppCompatActivity {
         bottomBar.enableShiftingMode(false);
         bottomBar.enableItemShiftingMode(false);
 
-        menuSelected(0);
+        if(currentItem == 4) {
+            menuSelected(4);
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, FragmentSetting.newInstance(), FragmentSetting.class.getSimpleName())
+                    .commit();
+        } else {
+            menuSelected(0);
+        }
+        Log.i("TAG", "initView: currentItem"+currentItem);
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -55,33 +65,38 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.tab_home:
                         setupToolbar(0);
                         menuSelected(0);
-                        fragment = new FragmentSummary();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, FragmentSummary.newInstance(), FragmentSummary.class.getSimpleName())
+                                .commit();
                         break;
                     case R.id.tab_credit:
                         setupToolbar(1);
                         menuSelected(1);
-                        fragment = new FragmentCreditDebit();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, FragmentCreditDebit.newInstance(), FragmentCreditDebit.class.getSimpleName())
+                                .commit();
                         break;
                     case R.id.tab_account:
                         setupToolbar(2);
                         menuSelected(2);
-                        fragment = new FragmentAccount();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, FragmentAccount.newInstance(), FragmentAccount.class.getSimpleName())
+                                .commit();
                         break;
                     case R.id.tab_debit:
                         setupToolbar(3);
                         menuSelected(3);
-                        fragment = new FragmentCreditDebit();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, FragmentCreditDebit.newInstance(), FragmentCreditDebit.class.getSimpleName())
+                                .commit();
                         break;
                     case R.id.tab_setting:
                         setupToolbar(4);
                         menuSelected(4);
-                        fragment = new FragmentSetting();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, FragmentSetting.newInstance(), FragmentSetting.class.getSimpleName())
+                                .commit();
                         break;
-                }
-                if (fragment != null) {
-                    ft.addToBackStack(null);
-                    ft.replace(R.id.container, fragment);
-                    ft.commit();
                 }
                 return false;
             }

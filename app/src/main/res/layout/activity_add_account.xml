@@ -17,12 +17,14 @@
         android:padding="8dp">
 
         <ImageView
+            android:id="@+id/imageContactList"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:padding="5dp"
             android:src="@drawable/ic_plus" />
 
         <com.arkaccountslite.widget.CustomEditText
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -58,7 +60,7 @@
             app:font="@string/font_bold" />
 
         <com.arkaccountslite.widget.CustomEditText
-            android:id="@+id/edit_mobile_number"
+            android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_grey_fill"
@@ -83,7 +85,7 @@
             app:font="@string/font_bold" />
 
         <com.arkaccountslite.widget.CustomEditText
-            android:id="@+id/edit_balance"
+            android:id="@+id/editTextBalance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_grey_fill"

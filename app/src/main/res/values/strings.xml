@@ -37,6 +37,7 @@
     <string name="mobile_number">Mobile number</string>
     <string name="edit_account">Edit Account</string>
     <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
     <string name="allow_reminders">Allow Reminders</string>
     <string name="due_days_6520ed80bcb6ad9dd91aeb3f04bad093">Due days</string>
     <string name="Date">Date</string>
@@ -58,4 +59,7 @@
     <string name="english">English</string>
     <string name="hindi">हिंदी</string>
     <string name="gujarati">ગુજરાતી</string>
+    <string name="verifyOTP">Verify OTP</string>
+    <string name="verify">Verify</string>
+
 </resources>

@@ -5,6 +5,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/button_edge_less_padding_blue"
     android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     android:padding="16dp">
 
     <RelativeLayout
@@ -12,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <com.arkaccountslite.widget.CustomTextView
-            android:id="@+id/txt_account_name"
+            android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -22,7 +24,7 @@
             app:font="@string/font_bold" />
 
         <com.arkaccountslite.widget.CustomTextView
-            android:id="@+id/txt_account_amount"
+            android:id="@+id/textViewAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -33,7 +35,7 @@
     </RelativeLayout>
 
     <com.arkaccountslite.widget.CustomTextView
-        android:id="@+id/txt_phone_number"
+        android:id="@+id/textViewPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

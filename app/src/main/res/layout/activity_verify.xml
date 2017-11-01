@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="52dp"
+            android:text="@string/verifyOTP"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_heading"
+            app:font="@string/font_regular" />
+
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:inputType="number"
+            app:password="true"
+            app:pinBackground="@drawable/bottom_line"
+            app:pinHeight="50dp"
+            app:pinLength="4"
+            app:pinWidth="50dp" />
+
+        <com.arkaccountslite.widget.CustomButton
+            android:id="@+id/btn_verify"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_round_corner"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:button_font="@string/font_bold" />
+
+
+    </LinearLayout>
+</ScrollView>

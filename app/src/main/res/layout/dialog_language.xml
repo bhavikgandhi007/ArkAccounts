@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <com.arkaccountslite.widget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_language"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_medium"
+        app:font="@string/font_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/purchase_medium_gray" />
+
+    <io.blackbox_vision.wheelview.view.WheelView
+        android:id="@+id/loop_view"
+        style="@style/PickerText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="40dp"
+        app:canLoop="true"
+        app:centerTextColor="@android:color/black"
+        app:drawItemCount="7"
+        app:initPosition="1"
+        app:lineColor="@color/divider_color"
+        app:textSize="20sp"
+        app:topBottomTextColor="#ffafafaf" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/purchase_medium_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Cancel"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_regular" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/purchase_medium_gray" />
+
+        <com.arkaccountslite.widget.CustomTextView
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Save"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_normal"
+            app:font="@string/font_regular" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

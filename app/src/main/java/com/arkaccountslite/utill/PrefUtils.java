@@ -10,12 +10,18 @@ import android.preference.PreferenceManager;
 public class PrefUtils {
     public static final String PREF_TOS_ACCEPTED = "pref_tos_accepted";
     public static final String PREF_WELCOME_DONE = "pref_welcome_done";
-    public static final String PREF_DEVICE_TOKEN = "pref_device_token";
     public static final String PREF_IS_LOGGED_IN = "pref_is_logged_in";
     public static final String PREF_CART_COUNT_LOGGED_IN = "pref_cart_count_logged_In";
     public static final String PREF_DEFAULT_DUE_DAYS = "pref_default_due_days";
     public static final String PREF_IS_ALLOW_REMINDER = "pref_is_allow_reminder";
     public static final String PREF_IS_ALLOW_NOTIFICATION = "pref_is_allow_notification";
+    public static final String PREF_DEVICE_TOKEN = "PREF_DEVICE_TOKEN";
+    private static final String PREF_AUTH_TOKEN = "PREF_AUTH_TOKEN";
+    private static final String PREF_LOGIN = "PREF_LOGIN";
+    private static final String PREF_USER = "PREF_USER";
+
+    private static final String PREF_ACCOUNT_DATA = "PREF_ACCOUNT_DATA";
+
 
     private static final String TAG = PrefUtils.class.getSimpleName();
 
@@ -72,7 +78,7 @@ public class PrefUtils {
 
     public static int getPrefDefaultDueDays(Context context) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        return sp.getInt(PREF_DEFAULT_DUE_DAYS,30);
+        return sp.getInt(PREF_DEFAULT_DUE_DAYS, 30);
     }
 
     public static void setPrefDefaultDueDays(Context context, int duedays) {
@@ -98,5 +104,45 @@ public class PrefUtils {
     public static void setPrefIsAllowPush(Context context, boolean isAllow) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         sp.edit().putBoolean(PREF_IS_ALLOW_NOTIFICATION, isAllow).commit();
+    }
+
+    public static String isTokenAvailable(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getString(PREF_AUTH_TOKEN, null);
+    }
+
+    public static void markTokenAvailable(Context context, String token) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putString(PREF_AUTH_TOKEN, token).apply();
+    }
+
+    public static boolean isLoginDone(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getBoolean(PREF_LOGIN, false);
+    }
+
+    public static void markLoginDone(Context context, boolean loginDone) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putBoolean(PREF_LOGIN, loginDone).apply();
+    }
+
+    public static String getUser(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getString(PREF_USER, null);
+    }
+
+    public static void setUser(Context context, String user) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putString(PREF_USER, user).apply();
+    }
+
+    public static String getAccountData(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getString(PREF_ACCOUNT_DATA, null);
+    }
+
+    public static void setAccountData(Context context, String accountData) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        sp.edit().putString(PREF_ACCOUNT_DATA, accountData).apply();
     }
 }

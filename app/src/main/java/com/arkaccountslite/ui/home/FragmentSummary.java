@@ -13,6 +13,17 @@ import com.arkaccountslite.R;
 public class FragmentSummary extends Fragment {
 
 
+    public FragmentSummary() {
+
+    }
+
+    public static FragmentSummary newInstance() {
+        Bundle args = new Bundle();
+        FragmentSummary fragment = new FragmentSummary();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     private View view;
 
     @Nullable
